@@ -20,18 +20,6 @@ $keyword = $getcari;
  // anda bisa merubah jumlah tweet yang akan di tampilkanb dengan merubah angka pada count
  $tweets = $conn->get('search/tweets', array('q'=>$keyword, 'count'=>100, 'lang'=>'in'));
 
-
- // menampilkan hasil keyword yang di tentukan
-//  echo '<h4>Keyword @'.$keyword.'</h4><hr />';
-//  foreach ($tweets->statuses as $tweet) {
-//   $str_id = $tweet->id_str;
-//   $user = $tweet->user->screen_name;
-//   $text = $tweet->text;
-//   $date = date('Y-m-d h:i:s', strtotime($tweet->created_at));
-
-//   echo '</strong>'.$date.'</strong>< br />';
-//   echo '<strong>'.$user.'</strong> : '.$text.'< br /><hr />< br />';
-// }
 ?>
 
 
